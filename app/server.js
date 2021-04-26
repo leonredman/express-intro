@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-// import routes
+// Routes
 const routes = require("./routes.js");
 // Static Files Folder
 app.use(express.static("public"));
