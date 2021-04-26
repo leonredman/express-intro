@@ -1,16 +1,15 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    title Contact Page
-    link(rel='stylesheet' href='/css/styles.css')
-  body
-    h1 Testing Pug Template Engine
-    if loggedIn
-        .card
-        h2= username
-        h3 #{fname} #{lname}
-        each friend in friends
-            li= friend
+extends layouts/app
+  
+block seo 
+  title Pug Testing 
+
+
+block content
+  h1 Testing Pug Template Engine
+  if loggedIn
+  
+    .card
+      h2= username
+      h3 #{fname} #{lname}
+      each friend in friends
+        li= friend
