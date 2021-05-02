@@ -1,13 +1,110 @@
 doctype html
-html(lang='en')
+//
+  Editorial by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+html
   head
     block seo
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    link(rel='stylesheet', href='/css/styles.css')
-    include ../includes/jshead.html
-  body
-    include ../includes/header.pug
-    block content
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
+    link(rel='stylesheet' href='/css/main.css')
+  body.is-preload
+    // Wrapper
+    #wrapper
+      // Main
+      #main
+        .inner
+          // Header
+          header#header
+            a.logo(href='index.html')
+              strong Editorial
+              |  by HTML5 UP
+            ul.icons
+              li
+                a.icon.brands.fa-twitter(href='#')
+                  span.label Twitter
+              li
+                a.icon.brands.fa-facebook-f(href='#')
+                  span.label Facebook
+              li
+                a.icon.brands.fa-snapchat-ghost(href='#')
+                  span.label Snapchat
+              li
+                a.icon.brands.fa-instagram(href='#')
+                  span.label Instagram
+              li
+                a.icon.brands.fa-medium-m(href='#')
+                  span.label Medium
+          block content       
+     
+      // Sidebar
+      #sidebar
+        .inner
+          // Search
+          section#search.alt
+            form(method='post' action='#')
+              input#query(type='text' name='query' placeholder='Search')
+          // Menu
+          nav#menu
+            header.major
+              h2 Menu
+            ul
+              li
+                a(href='index.html') Homepage
+              li
+                a(href='http://localhost:3000/post/1') Post 1
+              li
+                a(href='http://localhost:3000/post/2') Post 2
+              li
+                a(href='http://localhost:3000/post/3') Post 3
+             
+          // Section
+          section
+            header.major
+              h2 Ante interdum
+            .mini-posts
+              article
+                a.image(href='#')
+                  img(src='images/pic07.jpg' alt='')
+                p Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.
+              article
+                a.image(href='#')
+                  img(src='images/pic08.jpg' alt='')
+                p Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.
+              article
+                a.image(href='#')
+                  img(src='images/pic09.jpg' alt='')
+                p Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.
+            ul.actions
+              li
+                a.button(href='#') More
+          // Section
+          section
+            header.major
+              h2 Get in touch
+            p
+              | Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+            ul.contact
+              li.icon.solid.fa-envelope
+                a(href='#') information@untitled.tld
+              li.icon.solid.fa-phone (000) 000-0000
+              li.icon.solid.fa-home
+                | 1234 Somewhere Road #8254
+                br
+                | 										Nashville, TN 00000-0000
+          // Footer
+          footer#footer
+            p.copyright
+              | © Untitled. All rights reserved. Demo Images: 
+              a(href='https://unsplash.com') Unsplash
+              | . Design: 
+              a(href='https://html5up.net') HTML5 UP
+              | .
+    // Scripts
+    script(src='/js/jquery.min.js')
+    script(src='/js/browser.min.js')
+    script(src='/js/breakpoints.min.js')
+    script(src='/js/util.js')
+    script(src='/js/main.js')
 
