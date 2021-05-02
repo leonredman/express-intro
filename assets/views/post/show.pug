@@ -1,0 +1,15 @@
+extends ../layouts/app 
+
+block seo 
+  title generic
+
+block content
+  // Content
+  section
+    header.main
+      h1= title
+    span.image.main
+      img(src=`${image_url}`, alt='')
+    p= description    
+    hr.major
+      
